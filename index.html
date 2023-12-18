@@ -3,23 +3,49 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<script type="text/javascript" src="js/interactive_3d/jqery-1.9.1.js"></script>
-		<script type="text/javascript" src="js/interactive_3d/jquery.interactive_3d.js"></script>
-		<link rel="stylesheet" href="style.css">
+
+		<script type="text/javascript" src="assets/libs/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="assets/libs/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="assets/libs/jquery.interactive_3d.js"></script>
+
+		<link rel="stylesheet" href="assets/css/style.css" />
+
+		<link rel="stylesheet" type="text/css" href="assets/libs/slick/slick.css" />
+		<link rel="stylesheet" type="text/css" href="assets/libs/slick/slick-theme.css" />
+
 		<title>Демо 3д слайдер</title>
 	</head>
 	<body>
-		<div id="3d" class="demo-3d">
-			<img src="images/frame_1.jpg"/>
-		</div>
+		<div class="slider">
+			<img src="assets/images/photo1.jpg" alt="">
+			<img src="assets/images/photo2.jpg" alt="">
+			<div id="3d" class="demo-3d">
+				<img src="assets/images/rotation/frame_1.jpg" />
+			</div>
+			<iframe src="https://tour.vr-pro.ru/Hata/index.htm" frameborder="0"></iframe>
+		  </div>
+		
 
 		<script type="text/javascript">
 			$(document).ready(function () {
+				
+
 				$("#3d").interactive_3d({
-					frames: 50,
+					frames: 100,
 					entrance: false,
+				});
+
+				$('.slider').slick({
+					arrows: true,
+					dots: false,
+					draggable: false,
+					slidesToShow: 1,
+					autoplay: false,
+					infinity: true
 				});
 			});
 		</script>
+
+		<script type="text/javascript" src="assets/libs/slick/slick.min.js"></script>
 	</body>
 </html>
