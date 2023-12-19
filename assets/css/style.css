@@ -51,9 +51,9 @@ a {
     height: 100vh !important;
 }
 
-.slider > * {
-    object-fit: cover;
-    object-position: center;
+.slider img {
+    object-fit: contain;
+    width: 100%;
 }
 
 .hidden { display: none !important; }

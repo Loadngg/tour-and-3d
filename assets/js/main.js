@@ -1,8 +1,10 @@
 $(document).ready(function () {
     $("#3d").interactive_3d({
         frames: 100,
-        entrance: false,
-        touchSupport: true
+        entrance: true,
+        touchSupport: true,
+        loading: "Загрузка, пожалуйста подождите...",
+        preloadImages: true
     });
 
     $(".slider").slick({
