@@ -28,7 +28,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: 500px;
+    max-width: 600px;
     padding: 0 2rem;
     margin: 0 auto;
     text-align: center;
@@ -36,14 +36,22 @@ a {
 }
 
 .slick-arrow {
-	margin: 0 50px;
+    position: absolute;
+    bottom: 0;
+	margin: 50px;
+    margin-top: auto;
 	z-index: 10;
     width: 50px !important;
+    height: 50px !important;
 }
 
 .slick-arrow::before {
     font-size: 50px !important;
     color: black !important;
+}
+
+.slider {
+    position: relative;
 }
 
 .slider, .slider__item {
