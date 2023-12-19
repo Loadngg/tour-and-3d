@@ -28,7 +28,7 @@ a {
 
 .container {
     width: 100%;
-    max-width: 600px;
+    max-width: 450px;
     padding: 0 2rem;
     margin: 0 auto;
     text-align: center;
@@ -38,8 +38,7 @@ a {
 .slick-arrow {
     position: absolute;
     bottom: 0;
-	margin: 50px;
-    margin-top: auto;
+	margin: auto 50px 75px;
 	z-index: 10;
     width: 50px !important;
     height: 50px !important;
@@ -88,14 +87,27 @@ a {
     border-radius: 10px;
 }
 
-.title, .description {
-    color: #5b5b5b;
+.title {
+    border-bottom: 1px solid #d1d1d1;
+    font-size: 18px;
     padding: 20px 5px;
+    color: #6c6c6c;
 }
 
-.title {
-    border-bottom: 1px solid #ccc;
-    font-size: 18px;
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    text-align: center;
+    padding: 20px;
+    color: #4a4a4a;
+    font-size: 17px;
+}
+
+.description .icon {
+    color: #81aee3;
+    font-size: 40px;
 }
 
 .button {
